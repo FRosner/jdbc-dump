@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jdbc-dump by FRosner</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jdbc-dump</h1>
+        <p>Application for dumping tables in several storage formats through a JDBC Spark connection.</p>
+
+        <p class="view"><a href="https://github.com/FRosner/jdbc-dump">View the Project on GitHub <small>FRosner/jdbc-dump</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/FRosner/jdbc-dump/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/FRosner/jdbc-dump/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/FRosner/jdbc-dump">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="jdbc-dump" class="anchor" href="#jdbc-dump" aria-hidden="true"><span class="octicon octicon-link"></span></a>JDBC Dump</h2>
+
+<p>Application for dumping tables in several storage formats through a JDBC Spark connection.</p>
+
+<h2>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build</h2>
+
+<p><code>sbt assembly</code></p>
+
+<h2>
+<a id="use" class="anchor" href="#use" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use</h2>
+
+<div class="highlight highlight-source-shell"><pre>java -Djdbcd.url=<span class="pl-s"><span class="pl-pds">"</span>jdbc:sqlite:test.sqlite<span class="pl-pds">"</span></span> \
+-Djdbcd.table=<span class="pl-s"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span> \
+-Djdbcd.outputFormat=<span class="pl-s"><span class="pl-pds">"</span>json<span class="pl-pds">"</span></span> \
+-cp <span class="pl-s"><span class="pl-pds">"</span>jdbc-dump-assembly-x.y.z.jar:sqlite-jdbc-3.8.11.2.jar<span class="pl-pds">"</span></span> \
+de.frosner.jdbcd.Launcher</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/FRosner">FRosner</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
